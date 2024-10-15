@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Company</title>
+    <link rel="stylesheet" href="car.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (necessary for Carousel functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/resources/logo/logo.png"></img>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="/index.html">HOME</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="#condo">Condo</a></li>
+                            <li><a href="#tenants">Tenants</a></li>
+                            <li><a href="#rental">Rental Property</a></li>
+                            <li><a href="#cottage">Cottage</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li class="dropdown">
+                    <a href="#auto">AUTO</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <a href="/pages/Auto/car.html">Car</a>
+                            <li><a href="#condo">RV/Motorhome</a></li>
+                            <li><a href="#tenants">Classic Car</a></li>
+                            <li><a href="#rental">Boat</a></li>
+                            <li><a href="#cottage">Motorcycle</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li class="dropdown">
+                    <a href="#life">LIFE</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="/pages/life/lifeInsurance.html">Life Insurance</a></li>
+                            <li><a href="#condo">Critical Insurance</a></li>
+                            <li><a href="#tenants">Personal Health</a></li>
+                            <li><a href="#rental">Pet</a></li>
+                            <li><a href="#cottage">Group</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li><a href="#contact" class="contact-btn" >Contact</a></li>
+                <li><a href="#contact" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                </a>
+                   
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="content">
+       <h1>Home & Auto Insurance Questionnaire</h1>
+        <img src="/resources/svgs/HomeAutoinsurance.svg" class="homeAutoLogo">
+        <br/>
+        
+<form id="insuranceForm">
+    <!-- Step 1: basic info -->
+    <div class="form-step active">
+        <div class="form-group"><br>
+            <label class="prompt">What type of insurance are you interested in?*</label><br>
+            <input type="radio" id="option1" name="insuranceType" value="homeAuto" required>
+            <label for="option1">Home & Auto Insurance</label><br>
+            <input type="radio" id="option2" name="insuranceType" value="auto" required>
+            <label for="option2">Auto Insurance Only</label><br>
+            <input type="radio" id="option3" name="insuranceType" value="home" required>
+            <label for="option3">Home Insurance Only</label><br>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt">Are you looking for insurance outside of Ontario, Alberta, British Columbia, New Brunswick, or Nova Scotia?*</label><br>
+            <input type="radio" id="yesOutside" name="outsideProvince" value="yes" required>
+            <label for="yesOutside">Yes</label><br>
+            <input type="radio" id="noOutside" name="outsideProvince" value="no" required>
+            <label for="noOutside">No</label><br>
+        </div><br>
+        <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+    </div>
+    <br>
+    <!-- Step 2: Vehicle Information -->
+    <div class="form-step">
+        <h4>Your Contact Information</h4>
+        <div class="form-group"><br>
+            <label class="prompt" for="firstName">Your First Name:*</label>
+            <input type="text" id="firstName" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="lastName">Your Last Name:*</label>
+            <input type="text" id="lastName" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="dob">Date of Birth:*</label>
+            <input type="date" id="dob" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="email">Email:*</label>
+            <input type="email" id="email" placeholder="email@example.com" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="assGroupName">Are you part of an association or group?*</label><br>
+            <input type="radio" id="yesGroup" name="assOrGroup" value="yes">
+            <label for="yesGroup">Yes</label><br>
+            <input type="radio" id="noGroup" name="assOrGroup" value="no">
+            <label for="noGroup">No</label><br> 
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="assGroupName">Which association or group do you belong to?*</label>
+            <input type="text" id="assGroupName" placeholder="Write N/A if not applicable" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="assGroupId">What is your association ID number?*</label>
+            <input type="text" id="assGroupId" placeholder="Write N/A if not applicable" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="hearAbout">How did you hear about us?*</label><br>
+            <select class="form-control" id="hearAbout" name="hearAbout" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="internet">Referral by friend</option>
+                <option value="socialMedia">Saw advertisement</option>
+                <option value="friend">Online Search</option>
+                <option value="advertisement">Received email from Diamond Insurance</option>
+                <option value="other">Other</option>
+            </select>
+        </div><br><br>
+        <h4>Your Mailing Address</h4>
+        <div class="form-group"><br>
+            <label class="prompt" for="address">Address:*</label>
+            <input type="text" id="address" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="city">City:*</label>
+            <input type="text" id="city" class="form-control" required>
+        </div>
+        <div class="form-group"><br>
+            <label class="prompt" for="province">Province:*</label>
+            <select class="form-control" id="province" required>
+                <option value="" disabled selected>Select your province</option>
+                <option value="AB">AB</option>
+                <option value="BC">BC</option>
+                <option value="MB">MB</option>
+                <option value="NL">NL</option>
+                <option value="NB">NB</option>
+                <option value="NT">NT</option>
+                <option value="NS">NS</option>
+                <option value="NU">NU</option>
+                <option value="ON">ON</option>
+                <option value="PE">PE</option>
+                <option value="QC">QC</option>
+                <option value="SK">SK</option>
+                <option value="YT">YT</option>
+            </select>
+        </div><br>
+        <button type="button" class="btn btn-secondary" onclick="prevStep()">Back</button>
+        <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+    </div>
+    <div class="form-step">
+        <p>Coming Soon!</p>
+    </div>
+</form>
+    </div>
+   
+    <br>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footerContent">
+              <div class="logo">
+                <img src="/resources/logo/logo.png"></img>
+              </div>
+            </div>
+            <div class="ourSection">
+                <h2>Our Section</h2>
+                <a href="/pages/ourSection/privacy.html">Privacy Policy</a>
+                <a href="/pages/ourSection/about.html">About</a>
+                <a href="/pages/ourSection/team.html">Our Team</a>
+                <a href="/pages/contact/contact.html">Contact</a>
+                <a href="">Group Programs</a>
+            </div>
+            <div class="contact">
+                <h2>Get In Touch</h2>
+
+                <!-- Facebook Icon -->
+                <a href="https://www.facebook.com/YourPage" target="_blank" style="text-decoration: none;">
+                    <p class="bi bi-facebook"> Facebook</p>
+                </a>
+                
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/YourProfile" target="_blank" style="text-decoration: none;">
+                    <p class="bi bi-linkedin"> Linkedin</p>
+                </a>
+                
+                <!-- Phone Icon -->
+                <a href="tel:+1234567890" style="text-decoration: none;">
+                    <p class="bi bi-telephone"> 1 800 663 6828</p>
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2024 Diamond Insurance Group. All rights reserved.</p>
+    </footer>
+
+    <script src="car.js"></script>
+</body>
+</html>

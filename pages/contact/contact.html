@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Company</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (necessary for Carousel functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/resources/logo/logo.png"></img>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="/index.html">HOME</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="#condo">Condo</a></li>
+                            <li><a href="#tenants">Tenants</a></li>
+                            <li><a href="#rental">Rental Property</a></li>
+                            <li><a href="#cottage">Cottage</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li class="dropdown">
+                    <a href="#auto">AUTO</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <a href="/pages/Auto/car.html">Car</a>
+                            <li><a href="#condo">RV/Motorhome</a></li>
+                            <li><a href="#tenants">Classic Car</a></li>
+                            <li><a href="#rental">Boat</a></li>
+                            <li><a href="#cottage">Motorcycle</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li class="dropdown">
+                    <a href="#life">LIFE</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="/pages/life/lifeInsurance.html">Life Insurance</a></li>
+                            <li><a href="#condo">Critical Insurance</a></li>
+                            <li><a href="#tenants">Personal Health</a></li>
+                            <li><a href="#rental">Pet</a></li>
+                            <li><a href="#cottage">Group</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li><a href="#contact" class="contact-btn" >Contact</a></li>
+                <li><a href="#contact" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                </a>
+                   
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="content">
+        <div class="contact">
+            
+            <div class="contact-form-container">
+                <form id="contactForm" novalidate>
+                    <h2 class="form-title">Contact Us Today!</h2>
+                    <div class="form-group">
+                        <label for="name">Name*</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message*</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        <div class="invalid-feedback">Please enter a message.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-info">Send Message</button>
+                </form>
+                <div class="contactInfo">
+                    <img src="/resources/logo/logo.png"></img>
+                    <a href="tel:+19059510029" style="text-decoration: none;">
+                        <p class="bi bi-telephone"> 905-951-0029</p>
+                    </a>
+                    <a href="mailto:asidhu@dig.insure" style="text-decoration: none;" class="contact-item">
+                        <p class="bi bi-envelope"> asidhu@dig.insure</p>
+                    </a>
+                    <a href="mailto:ssidhu@dig.insure" style="text-decoration: none;" class="contact-item">
+                        <p class="bi bi-envelope"> ssidhu@dig.insure</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="locationContainer">
+                <h1>Our Locations!</h1>
+
+                <div class="mapContainer">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5760.629586555155!2d-79.753877!3d43.7870806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b17f7d28fffff%3A0x495d2efa66316ad5!2s60%20Lacoste%20Blvd%20unit%20209-210%2C%20Brampton%2C%20ON%20L6P%202K2!5e0!3m2!1sen!2sca!4v1725988176660!5m2!1sen!2sca"
+                            width="100%" 
+                            height="450" 
+                            frameborder="0" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            aria-hidden="false" 
+                            tabindex="0">
+                        </iframe>
+                        <div class="address-icon">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>60 Lacoste Blvd Unit 209-210, Brampton, ON L6P 4B5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.3722395952536!2d-75.75828222356877!3d45.34129764163048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0710d7ea7581%3A0x48b6669c73dee3b8!2s1439%20Woodroffe%20Ave%2C%20Ottawa%2C%20ON%20K2G%201W1!5e0!3m2!1sen!2sca!4v1725988265622!5m2!1sen!2sca"
+                            width="100%" 
+                            height="450" 
+                            frameborder="0" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            aria-hidden="false" 
+                            tabindex="0">
+                        </iframe>
+                        <div class="address-icon">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>1439 Woodroffe Avenue Nepean, Ottawa, ON K2G1W1</span>
+                        </div>  
+                    </div>            
+                </div>
+            </div> 
+
+        </div>
+       
+
+
+    </div>
+   
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="footerContent">
+              <div class="logo">
+                <img src="/resources/logo/logo.png"></img>
+              </div>
+            </div>
+            <div class="ourSection">
+                <h2>Our Section</h2>
+                <a href="/pages/ourSection/privacy.html">Privacy Policy</a>
+                <a href="/pages/ourSection/about.html">About</a>
+                <a href="/pages/ourSection/team.html">Our Team</a>
+                <a href="/pages/contact/contact.html">Contact</a>
+                <a href="">Group Programs</a>
+            </div>
+            <div class="contact">
+                <h2>Get In Touch</h2>
+
+                <!-- Facebook Icon -->
+                <a href="https://www.facebook.com/YourPage" target="_blank" style="text-decoration: none;">
+                    <p class="bi bi-facebook"> Facebook</p>
+                </a>
+                
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/YourProfile" target="_blank" style="text-decoration: none;">
+                    <p class="bi bi-linkedin"> Linkedin</p>
+                </a>
+                
+                <!-- Phone Icon -->
+                <a href="tel:+1234567890" style="text-decoration: none;">
+                    <p class="bi bi-telephone"> 1 800 663 6828</p>
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2024 Diamond Insurance Group. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

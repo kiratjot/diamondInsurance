@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (necessary for Carousel functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/resources/logo/logo.png"></img>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#home">HOME</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#condo">Condo</a></li>
+                            <li><a href="#tenants">Tenants</a></li>
+                            <li><a href="#rental">Rental Property</a></li>
+                            <li><a href="#cottage">Cottage</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li class="dropdown">
+                    <a href="">AUTO</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <a href="/pages/Auto/car.html">Car</a>
+                            <li><a href="#condo">RV/Motorhome</a></li>
+                            <li><a href="#tenants">Classic Car</a></li>
+                            <li><a href="#rental">Boat</a></li>
+                            <li><a href="#cottage">Motorcycle</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li class="dropdown">
+                    <a href="#life">LIFE</a>
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="/pages/life/lifeInsurance.html">Life Insurance</a></li>
+                            <li><a href="#condo">Critical Insurance</a></li>
+                            <li><a href="#tenants">Personal Health</a></li>
+                            <li><a href="#rental">Pet</a></li>
+                            <li><a href="#cottage">Group</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li><a href="pages/contact/contact.html" class="contact-btn" >Contact</a></li>
+                <li><a href="#contact" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                </a>
+                   
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="intro">
+        <h1>We make the road to insurance solutions simpler.</h1> 
+        <p style="font-size: 25px; color:grey;">So you can arrive where you need quicker.</p> 
+
+        <div class="introLinks">
+            <ul>
+                <li><a href="#home">
+                        <img src="/resources/svgs/BusinessandEnterprise-1.svg"></img>
+                        <p class="heading">Business & Enterprise</p>
+                        <p>Work with professionals who can help you assess your organization’s risk profile and manage your exposure. Access traditional and non-traditional commercial insurance solutions tailored to your unique needs and industry, offered at unparalleled rates.</p>
+                    </a>
+                </li>
+                <li><a href="#home">
+                        <img src="/resources/svgs/Associations.svg"></img>
+                        <p class="heading">Associations, Groups & Members</p>
+                        <p><strong>Members: </strong>Connect to your association's exclusive professional & personal insurance solutions.
+                        <br/><br/><strong>Association & Group Leadership: </strong>Implement an insurance program your members will value.
+                        </p>
+                    </a>
+                </li>
+                <li><a href="#home">
+                        <img src="/resources/svgs/ICP.svg"></img>
+                        <p class="heading">Independent Contractors & Professionals</p>
+                        <p>Connect with customized insurance solutions for professionals working through staffing agencies and for independent professionals across a variety of industries: finance, healthcare, design, consulting, IT and more.</p>
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="numberSection">
+        <div class="counter">
+            <img src="/resources/svgs/people.svg"></img>
+            <div>
+                <span class="count" data-target="1000">0</span>+
+            </div>
+            <p>Satisfied Client</p>
+        </div>
+        <div class="counter">
+            <img src="/resources/svgs/agent.svg"></img>
+            <div>
+                <span class="count" data-target="10">0</span>+
+            </div>
+            <p>Expert Agents</p>
+        </div>
+        <div class="counter">
+            <img src="/resources/logo/logo.png"></img>
+            <div>
+                <span class="count" data-target="100">0</span>+
+            </div>
+            <p>Awards</p>
+        </div>
+        <div class="counter">
+            <img src="/resources/logo/logo.png"></img>
+            <div>
+                <span class="count" data-target="20">0</span>+
+            </div>
+            <p>Years Experience</p>
+        </div>
+
+    </div>
+    <div class="review">
+        <p id="reviewHeader">What our clients are saying</p>
+
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center flex-column text-center p-4">
+                        <p class="review-text">"This service is amazing! Highly recommend it to anyone looking for quality."</p>
+                        <span class="review-author">- Client 1</span>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center flex-column text-center p-4">
+                        <p class="review-text">"Fantastic experience. Customer service was outstanding."</p>
+                        <span class="review-author">- Client 2</span>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center flex-column text-center p-4">
+                        <p class="review-text">"Couldn't be happier with the results! Will definitely return."</p>
+                        <span class="review-author">- Client 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+
+        <div class="content">
+            <img src="/resources/svgs/contact.svg"></img>
+            <h1 style="padding:20px">Contact us today!</h1>
+            <p>To speak to a professional about your needs, please click on the button below or call 1 800 663 6828.</p>
+            <a href="pages/contact/contact.html" class="btn btn-outline-info">WRITE US A NOTE</a>
+
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="footerContent">
+              <div class="logo">
+                <img src="/resources/logo/logo.png"></img>
+              </div>
+            </div>
+            <div class="ourSection">
+                <h2>Our Section</h2>
+                <a href="/pages/ourSection/privacy.html">Privacy Policy</a>
+                <a href="/pages/ourSection/about.html">About</a>
+                <a href="/pages/ourSection/team.html">Our Team</a>
+                <a href="/pages/contact/contact.html">Contact</a>
+                <a href="">Group Programs</a>
+            </div>
+            <div class="contact">
+                <h2>Get In Touch</h2>
+
+                <!-- Facebook Icon -->
+                <a href="https://www.facebook.com/YourPage" target="_blank" style="text-decoration: none;">
+                    <p class="bi bi-facebook"> Facebook</p>
+                </a>
+                
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/YourProfile" target="_blank" style="text-decoration: none;">
+                    <p class="bi bi-linkedin"> Linkedin</p>
+                </a>
+                
+                <!-- Phone Icon -->
+                <a href="tel:+1234567890" style="text-decoration: none;">
+                    <p class="bi bi-telephone"> 1 800 663 6828</p>
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2024 Diamond Insurance Group. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
